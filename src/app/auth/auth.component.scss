@@ -1,0 +1,85 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-transform: lowercase;
+}
+.page--login{
+    width: 99.8%;
+    height: 97.9vh;    
+    position:relative;
+    //background-image: url('../../assets/img/img-background.jpeg');
+   // -webkit-backdrop-filter: blur(10px);
+    //backdrop-filter: blur(5px);
+
+}
+
+.login--principal{
+    width: 40rem;
+    height: 25rem;
+    box-shadow: -3px 4px 5px -2px #0f3bb9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    border-radius: 0px;
+    background: white;
+    padding: 0px 0px;
+}
+.input--box--usuario , .inputs--box--pass{
+        
+        position: relative;
+        width: 15rem;
+        margin: 15px auto;
+    }
+
+.label--usuario ,.label--pass{
+    position: absolute; 
+    top:10px;
+    left:15px;
+    color: #0f3bb9;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms  ease-in;
+}
+.input--usuario, .input--pass{   
+    padding: 10px;
+    border: 2px solid #0f3bb9;
+    border-radius: 5px;
+    width: 13.5rem;
+    background: transparent;
+}
+
+.input--usuario:focus, .input--pass:focus{
+    outline: none;
+}
+.button--login{
+    width: 15rem;
+    margin: auto;
+    display: block;
+    padding: 9px;
+    border-radius: 4px;
+    margin-top: 45px;
+    border: 2px solid #0f3bb9;
+    background-color: #0f3bb9;
+    color: white;
+}
+.img--logo img{
+    display: block;
+    width: 100%;
+    height: 25rem;
+}
+
+.input--usuario:focus ~ .label--usuario,
+.input--usuario:not(:placeholder-shown).input--usuario:not(:focus) ~ .label--usuario,
+.input--pass:focus ~ .label--pass,
+.input--pass:not(:placeholder-shown).input--pass:not(:focus) ~ .label--pass
+{
+    background-color: white ;
+    top: -0.5rem;
+    left: 1.4em;
+    font-size:0.9rem;
+    color: #0f3bb9;
+    padding: 0px 1px;
+    font-weight: 600;
+}

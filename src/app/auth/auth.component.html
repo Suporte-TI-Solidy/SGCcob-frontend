@@ -1,0 +1,21 @@
+<div class="page--login">
+    <div class="login--principal">
+        
+       
+        <div class="inputs--login" [formGroup]="fControl">
+                <div class="input--box--usuario">
+                    <input  id="labelUser" class="input--usuario" type="text" placeholder=" " formControlName="usuario">
+                    <label for="labelUser" class="label--usuario">Usuario</label>
+                </div>
+                <div class="inputs--box--pass">
+                    <input id="labelPass" class="input--pass" type="password" placeholder=" " formControlName="senha">
+                    <label for="labelPass" class="label--pass">Senha</label>
+                </div>
+                <button class="button--login" (click)="login()">Entrar</button>
+            </div>
+            <div class="img--logo">
+                <img src="../../assets/img/img-background.jpeg">
+                </div> 
+    </div>
+</div>
+

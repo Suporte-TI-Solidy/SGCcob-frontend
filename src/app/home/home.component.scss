@@ -1,0 +1,98 @@
+/*app-sidenav{
+    height: calc(100% - 3.6rem);
+    width: 15rem;
+    background-color: #263238;
+   border: 1px solid red;
+    position: fixed;
+    left: 0;
+    top: 60px;
+}*/
+.logo--system{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.logo--system--img{
+    display: block;
+    padding: 0rem;
+}
+.logo--system--datas{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menu--header{
+    height: 3.8rem;
+    margin: 0;
+    background: #263238;
+    //width: calc(100% + 15rem);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+.logo{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    width: 15rem;
+    display: grid;
+    grid-template-columns: 85% 15% 80%;
+    justify-content: space-between;
+}
+
+.icon--logo{
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.header--user--info{
+    padding: 0px 6px;
+    display: grid;
+    height: 3.3rem;
+    grid-template-columns: 4rem 11rem;
+    background-color: #44596327;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.header--user--info img{ 
+    display: block;
+    width: 65%;
+    border-radius: 50%;
+
+}
+
+.header--info--user{
+    width: 96%;
+    font-size: 0.8rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.header--info--user span{
+    font-weight: 600;
+    
+}
+
+// header select 
+
+select{
+    color: white;
+    background: transparent;
+    padding: 5px;
+    border-radius: 6px;
+    width: 80%;
+    border: 2px solid white;
+    font-family: 'Montserrat', sans-serif;
+}
+select:focus{
+    outline: none;
+}
+option{
+    color: #445963;
+}
+.icon--btn--users{
+    margin: 4px;
+}

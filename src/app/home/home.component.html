@@ -1,0 +1,29 @@
+<div class="menu--header">
+    <div class="logo">
+      <div class="logo--system--datas">
+        <!--<span class="logo--system--img">S</span>-->
+        <span class="logo--system">   SGCcob</span>
+      </div>
+        <div class="icon--logo" (click)="menuCollapsed()">
+            <i class="sidenav-link-icon" class="fa fa-bars"></i>
+        </div>
+        <div class="header--empresas">
+            <select name="" id="" class="select--emps" [(ngModel)]="emps" (change)="empSelected(emps)">
+                <option [value]="emps.id" *ngFor="let emps of userLogged.empresa">{{emps.nomeFantasia }}</option>
+            </select>
+        </div>
+    </div>   
+
+    <div class="header--user">
+      
+        <div class="header--user--info"(click)="menuUser()">
+            <img src="https://ionicframework.com/docs/img/demos/avatar.svg" class="header--img--user">
+            <div class="header--info--user">
+                <div><span class=""> {{userLogged?.usuario}}  <i [class]="collapsedMenu ? 'fa fa-caret-right':'fa fa-caret-down'"></i> </span></div>                
+            </div>
+        </div>        
+    </div>
+
+</div>
+<app-sidenav [collapsed]="collapsed"></app-sidenav>
+<app-body [collapsed]="collapsed"></app-body>
